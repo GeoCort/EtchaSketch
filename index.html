@@ -7,9 +7,26 @@
     <title>Etch a Sketch</title>
 </head>
 <body>
+    <div class="game-c">
+    <div class="ui-grid">
+        <h1>Etch a Sketch</h1>
+        <div class="ui-con">
+            <div class="controls">
+                <div class="color">
+                    <button>black</button>
+                </div>
+            </div>
+            <div class="range-c">
+            <input  type="range" name="ranges" id="gridrange"step="1" min="10" max="64" value="40" >
+            <label for="ranges" id="rangelabel">10x10</label>
+            </div>
+            <button>Reset Board</button>
+        </div>
+    </div>
     <div class="container" id="sketch-c">
 
     </div>
+</div>
     <script src="script.js"></script>
 </body>
 </html>
