@@ -7,11 +7,21 @@ body{
     border:1px solid black;
     display:flex;
     flex-direction: column;
-    max-width: fit-content;
+    max-width: 960px;
+    max-height: 960px;
 }
-.test{
-    background-color:red;
-    width:30px;
-    height: 30px;
+/* grid size */
+.small{
+    width: 1rem;
+    height: 1rem;
     border:1px solid black;
+}
+.large{
+
+        width: .5rem;
+        height: .5rem;
+        border:1px solid black;
+}
+.hori{
+    display: flex;
 }
