@@ -1,0 +1,17 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-self: center;
+}
+.container{
+    border:1px solid black;
+    display:flex;
+    flex-direction: column;
+    max-width: fit-content;
+}
+.test{
+    background-color:red;
+    width:30px;
+    height: 30px;
+    border:1px solid black;
+}
