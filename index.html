@@ -11,16 +11,12 @@
     <div class="ui-grid">
         <h1>Etch a Sketch</h1>
         <div class="ui-con">
-            <div class="controls">
-                <div class="color">
-                    <button>black</button>
-                </div>
-            </div>
+            <button class="btn">black</button>
             <div class="range-c">
-            <input  type="range" name="ranges" id="gridrange"step="1" min="10" max="64" value="40" >
-            <label for="ranges" id="rangelabel">10x10</label>
+            <input  type="range" name="ranges" id="gridrange" step="1" min="10" max="64" value="40" >
+            <label for="ranges" id="rangelabel">10 x 10</label>
             </div>
-            <button>Reset Board</button>
+            <button class="btn" id="reset">Reset Board</button>
         </div>
     </div>
     <div class="container" id="sketch-c">

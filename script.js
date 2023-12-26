@@ -1,14 +1,16 @@
 let container = document.getElementById("sketch-c") // grid container
 let range = document.getElementById("gridrange");
 range_display = document.getElementById("rangelabel")
-let grid_size = 40;
+let hover = document.querySelectorAll(".grid-style")
+let resetBtn = document.getElementById("reset")
+let grid_size = 30;
 //slider event handler
 
 function makeCell(grid_size){
     let div= document.createElement("div");
     div.style.width =`${grid_size}px`
     div.style.height =`${grid_size}px`
-    div.classList.add("grid-style")
+    div.classList.add("grid-style",)
     return div;
 }
 function startBoard(size){
@@ -38,4 +40,15 @@ range.addEventListener("input",()=>{
      console.log(grid_size)
      console.log(typeof(grid_size))
      resetGame(container.clientWidth/ grid_size)
+})
+
+resetBtn.addEventListener("click",()=>{
+    resetGame(container.clientWidth / grid_size);
+})
+
+let cells = [...document.querySelectorAll(".grid-style")];
+cells.map((event)=>{
+    event.addEventListener("mouseover",()=>{
+        event.style.backgroundColor="black";
+    })
 })

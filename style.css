@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
 }
 .grid-style{
     border: .5px solid black;
@@ -10,10 +11,68 @@
 display: grid;
 width:600px;
 height:600px;
+background-color: white;
+border-radius: 5PX;
 }
 .game-c{
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: snow;
+    /* background-color: #F56E0F; */
+    padding:2rem;
+}
+h1{
+    text-align: center;
+    display: block;
+    background-color: #262626;
+    border-radius: 10px;
+}
+.ui-grid{
+    /* background-color: #151419; */
+    color:white;
+    /* background-color: #F56E0F; */
+    background-color:#1B1B1E;
+    display:flex;
+    flex-direction: column;
+    width:600px;
+    border-start-start-radius: 15px;
+    border-start-end-radius: 15px;
+    padding:2rem;
+}
+
+.ui-con{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #F56E0F; */
+    margin-top: 1rem;;
+
+    border-radius: 25px;
+}
+
+.btn{
+    background-color: #878787;
+     /* background-color: #ff8a37; */
+    border:none;
+    padding:.5rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 1rem;
+    padding-left:1rem;
+    padding-right: 1rem;
+
+}
+.btn:hover{
+    background-color: snow;
+}
+#rangelabel{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.mouseover{
+    background-color: black;
 }
