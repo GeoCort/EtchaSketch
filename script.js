@@ -20,6 +20,7 @@ function startBoard(size){
             container.appendChild(makeCell(size));
         }
     }
+    drawFunction("black");
 }
 function clearContainer(){
     container.innerHTML=""
@@ -32,13 +33,8 @@ function resetGame(s){
 startBoard(container.clientWidth/grid_size);
 
 range.addEventListener("input",()=>{
-    console.log(range.value)
     rangelabel.textContent= `${range.value} x ${range.value}`;
-    console.log(grid_size)
-    console.log(typeof(grid_size))
      grid_size =  parseInt(range.value)
-     console.log(grid_size)
-     console.log(typeof(grid_size))
      resetGame(container.clientWidth/ grid_size)
 })
 
@@ -46,9 +42,12 @@ resetBtn.addEventListener("click",()=>{
     resetGame(container.clientWidth / grid_size);
 })
 
-let cells = [...document.querySelectorAll(".grid-style")];
+
+function drawFunction(color){
+    let cells = [...document.querySelectorAll(".grid-style")];
 cells.map((event)=>{
     event.addEventListener("mouseover",()=>{
-        event.style.backgroundColor="black";
+        event.style.backgroundColor=`${color}`;
     })
 })
+}
